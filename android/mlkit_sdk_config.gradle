@@ -1,0 +1,4 @@
+ext {
+    mlkitCompileSdk = rootProject.hasProperty("MLKIT_COMPILE_SDK") ? rootProject.MLKIT_COMPILE_SDK.toInteger() : 33
+    mlkitTargetSdk  = rootProject.hasProperty("MLKIT_TARGET_SDK") ? rootProject.MLKIT_TARGET_SDK.toInteger() : 33
+}
