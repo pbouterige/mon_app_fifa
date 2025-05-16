@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:image_picker/image_picker.dart';
 import '../models/match.dart';
-import '../models/player.dart';
+import '../models/player.dart';  
 import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -228,7 +228,7 @@ class _AddMatchScreenState extends State<AddMatchScreen> {
 
   Future<List<Map<String, dynamic>>?> _callGeminiAPIWithImage(File imageFile) async {
     print('[_callGeminiAPIWithImage] Début de l\'appel API.');
-    final apiKey = 'AIzaSyApbSVV8w0mqbU5h_DNIdKvdcDPRara9zg';
+    final apiKey = 'demande moi';
     final bytes = await imageFile.readAsBytes();
     final base64Image = base64Encode(bytes);
     final prompt = """
